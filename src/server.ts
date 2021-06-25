@@ -19,7 +19,7 @@ app.use(cors({ optionsSuccessStatus: 200 }));
 
 // Different Routes
 
-app.get("/", (res: Response) => {
+app.get("/", (_, res: Response) => {
   res.send("Welcome !");
 });
 app.use("/api/user", userAuth);
